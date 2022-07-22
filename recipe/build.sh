@@ -7,6 +7,8 @@ cmake \
   -B ${SRC_DIR}/build \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
   -DLFP_FMT_HEADER_ONLY=ON                \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DBUILD_SHARED_LIBS=ON
   -DBUILD_TESTING=OFF                     \
 
 cd build

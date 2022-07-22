@@ -10,8 +10,10 @@ cmake ^
   -S %SRC_DIR% ^
   -B %SRC_DIR%\build ^
   -DCMAKE_INSTALL_PREFIX="%PREFIX%"
-  -DLFP_FMT_HEADER_ONLY=ON                \
-  -DBUILD_TESTING=OFF                     \
+  -DCMAKE_BUILD_TYPE=Release ^
+  -DBUILD_SHARED_LIBS=ON ^
+  -DLFP_FMT_HEADER_ONLY=ON ^
+  -DBUILD_TESTING=OFF 
 
 cd build
 if errorlevel 1 exit /b 1
