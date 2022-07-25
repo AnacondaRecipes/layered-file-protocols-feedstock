@@ -9,7 +9,7 @@ cmake ^
   -G"Ninja" ^
   -S %SRC_DIR% ^
   -B %SRC_DIR%\build ^
-  -DCMAKE_INSTALL_PREFIX="%PREFIX%"
+  -DCMAKE_INSTALL_PREFIX="%PREFIX%" ^
   -DCMAKE_BUILD_TYPE=Release ^
   -DBUILD_SHARED_LIBS=ON ^
   -DLFP_FMT_HEADER_ONLY=ON ^
